@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Weather App</title>
 </head>
 <body>
     <main>
         <div class="inputSection">
-            <input type="text" class="inputValue">
+            <input type="text" class="inputValue" placeholder="Search city here">
             <input type="submit" value="Submit">
         </div>
         <div class="locationSection">
-            <div class="locationDate">
+            <div class="locationTime">
                 <h2>Toronto</h2>
                 <h3>3:06pm</h3>
             </div>
-            <h2>November 7th 2020</h2>
+            <h2 class="locationDate">November 7th 2020</h2>
         </div>
         <div class="weatherSection">
-            <img src="" alt="" class="icon">
-            <h1>16</h1>
-            <p>FEELS LIKE</p>
-            <h3>13</h3>
+            <div class="weatherIcon">
+                <img src="" alt="" class="icon">
+                <h1>16</h1>
+            </div>
+            <div class="feelsLike">
+                <p>FEELS LIKE</p>
+                <h3>13</h3>
+            </div>
         </div>
         <div class="otherSection">
             <ul>

@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
 }
 
 :root {
@@ -13,3 +15,114 @@
     --dropShadow: #CA7E75;
     --searchInput: #D3C8B6;
 }
+/* ********** Body/Main ********** */
+body {
+    background: var(--bodyBackground);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    position: relative;
+    background: var(--moduleBackground);
+    height: 60vh;
+    width: 55vw;
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px var(--dropShadow);
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+/* ********** Input Section ********** */
+.inputSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 0.75rem;
+
+    background: var(--beigeBackgrounds);
+    border-radius: 5px;
+}
+.inputValue {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: var(--searchInput);
+}
+/* ********** Location Section ********** */
+.locationSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--locationText);
+}
+.locationTime {
+    display: flex;
+    flex-direction: column;
+    color: var(--locationText);
+}
+.locationDate {
+    color: var(--dateText);
+}
+/* ********** Weather Section ********** */
+.weatherSection {
+    margin: auto;
+    color: var(--beigeBackgrounds);
+    width: 45%;
+    /* height: 35%; */
+    display: flex;
+    align-items: center;
+}
+.weatherIcon {
+    display: flex;
+}
+img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background: var(--beigeBackgrounds);
+}
+.weatherIcon h1 {
+    font-size: 6rem;
+    padding-left: 0.5rem;
+}
+.feelsLike {
+    display: flex;
+    align-items: center;
+    width: 5ch;
+    padding-top: 2rem;
+    padding-left: 0.25rem;
+    font-size: 0.75rem;
+}
+.feelsLike h3 {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+}
+/* ********** Other Section ********** */
+.otherSection {
+    margin-top: auto;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+li {
+    background: var(--beigeBackgrounds);
+    padding: 0.75rem;
+    width: 22%;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--dropShadow);
+}
+.otherHeader {
+    font-size: 1rem;
+}
+.otherValue {
+    font-size: 3rem;
+}
+
