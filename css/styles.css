@@ -3,3 +3,13 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --bodyBackground: #DE978F;
+    --moduleBackground: #C17F8B;
+    --dateText: #F5C7C2;
+    --locationText: #EDE7DF;
+    --beigeBackgrounds: #FFF5F0;
+    --dropShadow: #CA7E75;
+    --searchInput: #D3C8B6;
+}
