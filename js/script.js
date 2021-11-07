@@ -28,10 +28,13 @@ button.addEventListener('click', function(){
             let pressureValue = data['main']['pressure'];
             let minTempValue = data['main']['temp_min'];
             let maxTempValue = data['main']['temp_max'];
-            let iconCode = data['weather']['icon'];
+
+            let iconCode = data['weather']['0']['icon'];
+            let iconURL = `http://openweathermap.org/img/w/${iconCode}${'.png'}`;
+            console.log(iconURL);
 
             cityDisplay.innerHTML = city;
-            weatherIcon.innerHTML = `<img src="http://openweathermap.org/img/w/" + ${iconCode} + ".png" alt="" class="icon">`;
+            weatherIcon.src = iconURL;
             temperature.innerHTML = temp;
             humidity.innerHTML = humidityValue;
             pressure.innerHTML = pressureValue;
